@@ -1,3 +1,92 @@
+# Mi proyecto: Historia de Usuario 1:  Crear publicación
+# Happy Path
+Cliente abre la página de crear publicación.
+
+Escribe texto válido en la caja de texto.
+
+Hace clic en el botón "Enviar".
+
+La publicación se envía correctamente.
+
+El campo de texto se limpia.
+
+Se muestra confirmación o la nueva publicación aparece listada.
+
+# Unhappy Paths
+
+El Cliente hace clic en "Enviar" sin escribir nada → debe mostrar mensaje de error y no enviar.
+
+El Cliente escribe solo espacios " " → debe mostrar mensaje de error y no enviar.
+
+El Cliente escribe un texto muy largo que supera el límite permitido → debe mostrar mensaje de error o truncar el texto.
+
+Error de red al intentar enviar la publicación → debe mostrar mensaje de error.
+
+# Historia de Usuario 2: Cliente envía mensaje a Freelancer
+
+# Happy Path
+Cliente abre la pestaña de mensajes de su dashboard.
+
+Escribe mensaje válido en la caja de texto.
+
+Hace clic en "Enviar mensaje".
+
+El mensaje se envía correctamente.
+
+El input de mensaje se limpia.
+
+El mensaje aparece en la conversación.
+
+# Unhappy Paths
+Cliente intenta enviar mensaje vacío → se muestra error.
+
+Cliente envía solo espacios → se muestra error.
+
+Cliente intenta enviar mensaje muy largo → error o truncamiento.
+
+Cliente hace clic en "Enviar" y hay error de red → se muestra error.
+
+# Historia de Usuario 3: Freelancer responde a Cliente
+
+# Happy Path
+Freelancer abre su dashboard de publicaciones aceptadas.
+
+Selecciona una publicación con un mensaje recibido.
+
+Escribe respuesta en la caja de texto.
+
+Hace clic en "Enviar".
+
+La respuesta se envía correctamente y se muestra.
+
+# Unhappy Paths
+Freelancer intenta responder sin texto → error.
+
+Freelancer envía espacios → error.
+
+Freelancer envía texto largo → error o truncamiento.
+
+Error de red al responder → se muestra error.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Laboratorio 04: Pruebas Unitarias con Jest en React
 
 Este laboratorio tiene como objetivo proporcionar una introducción práctica a las pruebas unitarias en aplicaciones React utilizando Jest y React Testing Library.
